@@ -61,14 +61,14 @@ h2 {
 
 
 li {
-    float: left;
+    float: right;
     position: relative;
-    left: 580px;
+    /*left: 580px;*/
     border-right: 1px solid black;
 }
 
 
-li:last-child {
+li:first-child {
     border-right: none;
 }
 li a {
@@ -166,3 +166,61 @@ input[type=submit]:hover {
     clear: both;
     display: table;
 }
+
+@media only screen and (max-width: 640px) {
+    /* For mobile phones: */
+
+    .header{
+        width:100%;
+        padding-left: 0px;
+    }
+
+    h1{
+        width:100%;
+        right:300px;
+        text-align:center;
+    }
+
+    li{
+        position: relative;
+        left: -20%;
+    }
+    p{
+        float:left;
+    }
+
+    #self {
+        width: 400px;
+        height: 400px;
+        
+    }
+
+    .content{
+        width:440px;
+    }
+
+
+.imageContainer {
+
+    width: 400px;
+    height: 400px;
+
+}
+
+}
+
+
+@media only screen and (min-width: 641px){
+
+    .content{
+        width: 700px;
+    }
+}
+
+@media only screen and (min-width: 980px){
+
+    .content{
+        width:980px;
+    }
+}
+
